@@ -1,0 +1,302 @@
+{
+    "addColorStop": {
+        "prefix": "addColorStop",
+        "body": "context.addColorStop(${number}, '${color}');",
+        "description": "context.addColorStop"
+    },
+    "arc": {
+        "prefix": "arc",
+        "body": "context.arc(${x}, ${y}, ${radius}, ${startAngle}, ${endAngle}, ${anticlockwise});",
+        "description": "context.arc"
+    },
+    "arcTo": {
+        "prefix": "arcTo",
+        "body": "context.arcTo(${x1}, ${y1}, ${x2}, ${y2}, ${radius});",
+        "description": "context.arcTo"
+    },
+    "beginPath": {
+        "prefix": "beginPath",
+        "body": "context.beginPath();",
+        "description": "context.strokeStyle"
+    },
+    "bezierCurveTo": {
+        "prefix": "bezierCurveTo",
+        "body": "context.bezierCurveTo(${cp1x}, ${cp1y}, ${cp2x}, ${cp2y}, ${x}, ${y});",
+        "description": "context.bezierCurveTo"
+    },
+    "clearRect": {
+        "prefix": "clearRect",
+        "body": "context.clearRect(${x}, ${y}, ${width}, ${height})",
+        "description": "context.clearRect"
+    },
+    "clip": {
+        "prefix": "clip",
+        "body": "context.clip()",
+        "description": "context.clip"
+    },
+    "closePath": {
+        "prefix": "closePath",
+        "body": "context.closePath();",
+        "description": "context.closePath"
+    },
+    "createImageData": {
+        "prefix": "createImageData",
+        "body": "context.createImageData(${width}, ${height});",
+        "description": "context.createImageData"
+    },
+    "createLinearGradient": {
+        "prefix": "createLinearGradient",
+        "body": "context.createLinearGradient(${x1}, ${y1}, ${x2}, ${y2});",
+        "description": "context.createLinearGradient"
+    },
+    "createPattern": {
+        "prefix": "createPattern",
+        "body": "context.createPattern(${Image}, ${repetition});",
+        "description": "context.createPattern \n\nimage:\n1. HTMLImageElement (<img>)\n2. HTMLVideoElement (<video>)\n3. HTMLCanvasElement (<canvas>)\n4. CanvasRenderingContext2D\n5. ImageBitmap\n6. ImageData, or a\n7. Blob.\n\nrepetition:\n1. repeat\n2. repeat-x\n3. repeat-y\n4. no-repeat"
+    },
+    "createRadialGradient": {
+        "prefix": "createRadialGradient",
+        "body": "context.createRadialGradient(${x1}, ${y1}, ${r1}, ${x2}, ${y2}, ${r2});",
+        "description": "context.createRadialGradient"
+    },
+    "direction": {
+        "prefix": "direction",
+        "body": "context.direction='${inherit | ltr | rtl}';",
+        "description": "context.direction"
+    },
+    "drawFocusIfNeeded": {
+        "prefix": "drawFocusIfNeeded",
+        "body": "context.drawFocusIfNeeded(${path, }${element});",
+        "description": "context.drawFocusIfNeeded"
+    },
+    "drawImage": {
+        "prefix": "drawImage",
+        "body": "context.drawImage(${Image}, ${dX}, ${dY}${, dWidth}${, dHeight});",
+        "description": "context.drawImage"
+    },
+    "fill": {
+        "prefix": "fill",
+        "body": "context.fill();",
+        "description": "context.fill"
+    },
+    "fillRect": {
+        "prefix": "fillRect",
+        "body": "context.fillRect(${x}, ${y}, ${width}, ${height});",
+        "description": "context.fillRect"
+    },
+    "fillStyle": {
+        "prefix": "fillStyle",
+        "body": "context.fillStyle='${color | gradient | pattern}';",
+        "description": "context.fillStyle"
+    },
+    "fillText": {
+        "prefix": "fillText",
+        "body": "context.fillText(${text}, ${x}, ${y}${[, maxWidth]});",
+        "description": "context.fillText"
+    },
+    "font": {
+        "prefix": "font",
+        "body": "context.font='${10}px ${sans-serif}';",
+        "description": "context.font"
+    },
+    "getContext": {
+        "prefix": "getContext",
+        "body": "getContext('${2d}');",
+        "description": "getContext"
+    },
+    "getImageData": {
+        "prefix": "getImageData",
+        "body": "context.getImageData(${sx}, ${sy}, ${sw}, ${sh});",
+        "description": "context.getImageData"
+    },
+    "getLineDash": {
+        "prefix": "getLineDash",
+        "body": "context.getLineDash();",
+        "description": "context.getLineDash"
+    },
+    "globalAlpha": {
+        "prefix": "globalAlpha",
+        "body": "context.globalAlpha=${alpha}",
+        "description": "context.globalAlpha"
+    },
+    "globalCompositeOperation": {
+        "prefix": "globalCompositeOperation",
+        "body": "context.globalCompositeOperation='${source-over | copy | destination-in | destination-out | destination-over | lighter | source-atop | source-in | source-out | xor}'",
+        "description": "context.globalCompositeOperation"
+    },
+    "imageSmoothingEnabled": {
+        "prefix": "imageSmoothingEnabled",
+        "body": [
+            "context.mozImageSmoothingEnabled = ${true};",
+            "context.webkitImageSmoothingEnabled = ${true};",
+            "context.msImageSmoothingEnabled = ${true};",
+            "context.imageSmoothingEnabled = ${true};"
+        ],
+        "description": "context.imageSmoothingEnabled"
+    },
+    "isPointInPath": {
+        "prefix": "isPointInPath",
+        "body": "context.isPointInPath(${x}, ${y});",
+        "description": "context.isPointInPath"
+    },
+    "isPointInStroke": {
+        "prefix": "isPointInStroke",
+        "body": "context.isPointInStroke(${path, }${x}, ${y});",
+        "description": "context.isPointInStroke"
+    },
+    "lineCap": {
+        "prefix": "lineCap",
+        "body": "context.lineCap='${butt | round | square}';",
+        "description": "context.lineCap"
+    },
+    "lineDashOffset": {
+        "prefix": "lineDashOffset",
+        "body": "context.lineDashOffset=${value}",
+        "description": "context.lineDashOffset"
+    },
+    "lineJoin": {
+        "prefix": "lineJoin",
+        "body": "context.lineJoin='${miter | bevel | round}';",
+        "description": "context.lineJoin"
+    },
+    "lineTo": {
+        "prefix": "lineTo",
+        "body": "context.lineTo(${x}, ${y});",
+        "description": "context.lineTo"
+    },
+    "lineWidth": {
+        "prefix": "lineWidth",
+        "body": "context.lineWidth=${width};",
+        "description": "context.lineWidth"
+    },
+    "measureText": {
+        "prefix": "measureText",
+        "body": "context.measureText(${text});",
+        "description": "context.measureText"
+    },
+    "miterLimit": {
+        "prefix": "miterLimit",
+        "body": "context.miterLimit=${number};",
+        "description": "context.miterLimit"
+    },
+    "moveTo": {
+        "prefix": "moveTo",
+        "body": "context.moveTo(${x}, ${y});",
+        "description": "context.moveTo"
+    },
+    "putImageData": {
+        "prefix": "putImageData",
+        "body": "context.putImageData(${imagedata}, ${dx}, ${dy}${, dirtyX}${, dirtyY}${, dirtyWidth}${, dirtyHeight});",
+        "description": "context.putImageData"
+    },
+    "quadraticCurveTo": {
+        "prefix": "quadraticCurveTo",
+        "body": "context.quadraticCurveTo(${cpx}, ${cpy}, ${x}, ${y});",
+        "description": "context.quadraticCurveTo"
+    },
+    "rect": {
+        "prefix": "rect",
+        "body": "context.rect(${x}, ${y}, ${width}, ${height});",
+        "description": "context.rect"
+    },
+    "resetTransform": {
+        "prefix": "resetTransform",
+        "body": "context.resetTransform();",
+        "description": "context.resetTransform"
+    },
+    "restore": {
+        "prefix": "restore",
+        "body": "context.restore();",
+        "description": "context.restore"
+    },
+    "rotate": {
+        "prefix": "rotate",
+        "body": "context.rotate(${Math.PI / 180 * }${degree});",
+        "description": "context.rotate"
+    },
+    "save": {
+        "prefix": "save",
+        "body": "context.save();",
+        "description": "context.save"
+    },
+    "scale": {
+        "prefix": "scale",
+        "body": "context.scale(${x}, ${y});",
+        "description": "context.scale"
+    },
+    "setLineDash": {
+        "prefix": "setLineDash",
+        "body": "context.setLineDash([${Array}]);",
+        "description": "context.setLineDash"
+    },
+    "setTransform": {
+        "prefix": "setTransform",
+        "body": "context.setTransform(${a}, ${b}, ${c}, ${d}, ${e}, ${f});",
+        "description": "context.setTransform"
+    },
+    "shadowBlur": {
+        "prefix": "shadowBlur",
+        "body": "context.shadowBlur=${blur};",
+        "description": "context.shadowBlur"
+    },
+    "shadowColor": {
+        "prefix": "shadowColor",
+        "body": "context.shadowColor='${color}';",
+        "description": "context.shadowColor"
+    },
+    "shadowOffsetX": {
+        "prefix": "shadowOffsetX",
+        "body": "context.shadowOffsetX=${x};",
+        "description": "context.shadowOffsetX"
+    },
+    "shadowOffsetY": {
+        "prefix": "shadowOffsetY",
+        "body": "context.shadowOffsetY=${y};",
+        "description": "context.shadowOffsetY"
+    },
+    "stroke": {
+        "prefix": "stroke",
+        "body": "context.stroke();",
+        "description": "context.stroke"
+    },
+    "strokeRect": {
+        "prefix": "strokeRect",
+        "body": "context.strokeRect(${x}, ${y}, ${width}, ${height});",
+        "description": "context.strokeRect"
+    },
+    "strokeStyle": {
+        "prefix": "strokeStyle",
+        "body": "context.strokeStyle='${color}';",
+        "description": "context.strokeStyle"
+    },
+    "strokeText": {
+        "prefix": "strokeText",
+        "body": "context.strokeText(${text}, ${x}, ${y}${, maxWidth});",
+        "description": "context.strokeText"
+    },
+    "textAlign": {
+        "prefix": "textAlign",
+        "body": "context.textAlign='${start | left | center | right |end}';",
+        "description": "context.textAlign"
+    },
+    "textBaseline": {
+        "prefix": "textBaseline",
+        "body": "context.textBaseline='${top | hanging | middle | alphabetic | ideographic | bottom}';",
+        "description": "context.textBaseline"
+    },
+    "toDataURL": {
+        "prefix": "toDataURL",
+        "body": "toDataURL();",
+        "description": "toDataURL()"
+    },
+    "transform": {
+        "prefix": "transform",
+        "body": "context.transform(${a}, ${b}, ${c}, ${d}, ${e}, ${f});",
+        "description": "context.transform"
+    },
+    "translate": {
+        "prefix": "translate",
+        "body": "context.translate(${x}, ${y});",
+        "description": "context.translate"
+    }
+}

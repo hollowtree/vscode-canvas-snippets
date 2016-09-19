@@ -1,0 +1,29 @@
+{
+    "name": "canvas-snippets",
+    "publisher": "hollowtree",
+    "icon": "img/logo.png",
+    "description": "A Canvas(JavaScript) Snippets Extension",
+    "version": "0.2.0",
+    "engines": {
+        "vscode": "0.10.1"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hollowtree/vscode-canvas-snippets"
+    },
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
