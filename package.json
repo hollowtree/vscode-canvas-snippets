@@ -3,7 +3,7 @@
     "publisher": "hollowtree",
     "icon": "img/logo.png",
     "description": "A Canvas(JavaScript) Snippets Extension",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "engines": {
         "vscode": "0.10.1"
     },
