@@ -1,0 +1,482 @@
+{
+    "m180": {
+        "prefix": "m180",
+        "body": " Math.PI / 180 * ",
+        "description": "Math.PI / 180 * "
+    },
+    "addColorStop": {
+        "prefix": "addColorStop",
+        "body": [
+            "${1}.addColorStop(${2:number}, '${3:color}');",
+            "${4}"
+        ],
+        "description": "ctx.addColorStop"
+    },
+    "arc": {
+        "prefix": "arc",
+        "body": [
+            "ctx.arc(${1:x}, ${2:y}, ${3:radius}, ${4:Math.PI / 180 * }${5:startAngle}, ${6:Math.PI / 180 * }${7:endAngle}, ${8:anticlockwise});",
+            "${9}"
+        ],
+        "description": "ctx.arc"
+    },
+    "arcTo": {
+        "prefix": "arcTo",
+        "body": [
+            "ctx.arcTo(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:radius});",
+            "${6}"
+        ],
+        "description": "ctx.arcTo"
+    },
+    "beginPath": {
+        "prefix": "beginPath",
+        "body": [
+            "ctx.beginPath();",
+            "${1}"
+        ],
+        "description": "ctx.strokeStyle"
+    },
+    "bezierCurveTo": {
+        "prefix": "bezierCurveTo",
+        "body": [
+            "ctx.bezierCurveTo(${1:cp1x}, ${2:cp1y}, ${3:cp2x}, ${4:cp2y}, ${5:x}, ${6:y});",
+            "${7}"
+        ],
+        "description": "ctx.bezierCurveTo"
+    },
+    "clearRect": {
+        "prefix": "clearRect",
+        "body": [
+            "ctx.clearRect(${1:x}, ${2:y}, ${3:width}, ${4:height});",
+            "${5}"
+        ],
+        "description": "ctx.clearRect"
+    },
+    "clip": {
+        "prefix": "clip",
+        "body": [
+            "ctx.clip();",
+            "${1}"
+        ],
+        "description": "ctx.clip"
+    },
+    "closePath": {
+        "prefix": "closePath",
+        "body": [
+            "ctx.closePath();",
+            "${1}"
+        ],
+        "description": "ctx.closePath"
+    },
+    "createImageData": {
+        "prefix": "createImageData",
+        "body": [
+            "ctx.createImageData(${1:width}, ${2:height});",
+            "${3}"
+        ],
+        "description": "ctx.createImageData"
+    },
+    "createLinearGradient": {
+        "prefix": "createLinearGradient",
+        "body": [
+            "ctx.createLinearGradient(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2});",
+            "${5}"
+        ],
+        "description": "ctx.createLinearGradient"
+    },
+    "createPattern": {
+        "prefix": "createPattern",
+        "body": [
+            "ctx.createPattern(${1:Image}, ${2:repetition});",
+            "${3}"
+        ],
+        "description": "ctx.createPattern \n\nimage:\n1. HTMLImageElement (<img>)\n2. HTMLVideoElement (<video>)\n3. HTMLCanvasElement (<canvas>)\n4. CanvasRenderingContext2D\n5. ImageBitmap\n6. ImageData, or a\n7. Blob.\n\nrepetition:\n1. repeat\n2. repeat-x\n3. repeat-y\n4. no-repeat"
+    },
+    "createRadialGradient": {
+        "prefix": "createRadialGradient",
+        "body": [
+            "ctx.createRadialGradient(${1:x1}, ${2:y1}, ${3:r1}, ${4:x2}, ${5:y2}, ${6:r2});",
+            "${7}"
+        ],
+        "description": "ctx.createRadialGradient"
+    },
+    "direction": {
+        "prefix": "direction",
+        "body": [
+            "ctx.direction='${1:inherit | ltr | rtl}';",
+            "${2}"
+        ],
+        "description": "ctx.direction"
+    },
+    "drawFocusIfNeeded": {
+        "prefix": "drawFocusIfNeeded",
+        "body": [
+            "ctx.drawFocusIfNeeded(${1:path, }${2:element});",
+            "${3}"
+        ],
+        "description": "ctx.drawFocusIfNeeded"
+    },
+    "drawImage": {
+        "prefix": "drawImage",
+        "body": [
+            "ctx.drawImage(${1:Image}, ${2:dX}, ${3:dY}${4:, dWidth}${5:, dHeight});",
+            "${6}"
+        ],
+        "description": "ctx.drawImage"
+    },
+    "fill": {
+        "prefix": "fill",
+        "body": [
+            "ctx.fill();",
+            "${1}"
+        ],
+        "description": "ctx.fill"
+    },
+    "fillRect": {
+        "prefix": "fillRect",
+        "body": [
+            "ctx.fillRect(${1});",
+            "${2}"
+        ],
+        "description": "ctx.fillRect"
+    },
+    "fillStyle": {
+        "prefix": "fillStyle",
+        "body": [
+            "ctx.fillStyle='${1:color | gradient | pattern}';",
+            "${2}"
+        ],
+        "description": "ctx.fillStyle"
+    },
+    "fillText": {
+        "prefix": "fillText",
+        "body": [
+            "ctx.fillText(${1:text}, ${2:x}, ${3:y}${[4:, maxWidth]});",
+            "${5}"
+        ],
+        "description": "ctx.fillText"
+    },
+    "font": {
+        "prefix": "font",
+        "body": [
+            "ctx.font='${1:10}px ${2:sans-serif}';",
+            "${3}"
+        ],
+        "description": "ctx.font"
+    },
+    "getContext": {
+        "prefix": "getContext",
+        "body": [
+            "getContext('${1:2d}');",
+            "${2}"
+        ],
+        "description": "getContext"
+    },
+    "getImageData": {
+        "prefix": "getImageData",
+        "body": [
+            "ctx.getImageData(${1:sx}, ${2:sy}, ${3:sw}, ${4:sh});",
+            "${5}"
+        ],
+        "description": "ctx.getImageData"
+    },
+    "getLineDash": {
+        "prefix": "getLineDash",
+        "body": [
+            "ctx.getLineDash();",
+            "${1}"
+        ],
+        "description": "ctx.getLineDash"
+    },
+    "globalAlpha": {
+        "prefix": "globalAlpha",
+        "body": [
+            "ctx.globalAlpha=${1:alpha};",
+            "${2}"
+        ],
+        "description": "ctx.globalAlpha"
+    },
+    "globalCompositeOperation": {
+        "prefix": "globalCompositeOperation",
+        "body": [
+            "ctx.globalCompositeOperation='${1:source-over | copy | destination-in | destination-out | destination-over | lighter | source-atop | source-in | source-out | xor}';",
+            "${2}"
+        ],
+        "description": "ctx.globalCompositeOperation"
+    },
+    "imageSmoothingEnabled": {
+        "prefix": "imageSmoothingEnabled",
+        "body": [
+            "ctx.mozImageSmoothingEnabled = ${1:true};",
+            "ctx.webkitImageSmoothingEnabled = ${1:true};",
+            "ctx.msImageSmoothingEnabled = ${1:true};",
+            "ctx.imageSmoothingEnabled = ${1:true};",
+            "${2}"
+        ],
+        "description": "ctx.imageSmoothingEnabled"
+    },
+    "isPointInPath": {
+        "prefix": "isPointInPath",
+        "body": [
+            "ctx.isPointInPath(${1:x}, ${2:y});",
+            "${3}"
+        ],
+        "description": "ctx.isPointInPath"
+    },
+    "isPointInStroke": {
+        "prefix": "isPointInStroke",
+        "body": [
+            "ctx.isPointInStroke(${1:path, }${2:x}, ${3:y});",
+            "${4}"
+        ],
+        "description": "ctx.isPointInStroke"
+    },
+    "lineCap": {
+        "prefix": "lineCap",
+        "body": [
+            "ctx.lineCap='${1:butt | round | square}';",
+            "${2}"
+        ],
+        "description": "ctx.lineCap"
+    },
+    "lineDashOffset": {
+        "prefix": "lineDashOffset",
+        "body": [
+            "ctx.lineDashOffset=${1:value};",
+            "${2}"
+        ],
+        "description": "ctx.lineDashOffset"
+    },
+    "lineJoin": {
+        "prefix": "lineJoin",
+        "body": [
+            "ctx.lineJoin='${1:miter | bevel | round}';",
+            "${2}"
+        ],
+        "description": "ctx.lineJoin"
+    },
+    "lineTo": {
+        "prefix": "lineTo",
+        "body": [
+            "ctx.lineTo(${1:x}, ${2:y});",
+            "${3}"
+        ],
+        "description": "ctx.lineTo"
+    },
+    "lineWidth": {
+        "prefix": "lineWidth",
+        "body": [
+            "ctx.lineWidth=${1:width};",
+            "${2}"
+        ],
+        "description": "ctx.lineWidth"
+    },
+    "measureText": {
+        "prefix": "measureText",
+        "body": [
+            "ctx.measureText(${1:text});",
+            "${2}"
+        ],
+        "description": "ctx.measureText"
+    },
+    "miterLimit": {
+        "prefix": "miterLimit",
+        "body": [
+            "ctx.miterLimit=${1:number};",
+            "${2}"
+        ],
+        "description": "ctx.miterLimit"
+    },
+    "moveTo": {
+        "prefix": "moveTo",
+        "body": [
+            "ctx.moveTo(${1:x}, ${2:y});",
+            "${3}"
+        ],
+        "description": "ctx.moveTo"
+    },
+    "putImageData": {
+        "prefix": "putImageData",
+        "body": [
+            "ctx.putImageData(${1:imagedata}, ${2:dx}, ${3:dy}${4:, dirtyX}${5:, dirtyY}${6:, dirtyWidth}${7:, dirtyHeight});",
+            "${8}"
+        ],
+        "description": "ctx.putImageData"
+    },
+    "quadraticCurveTo": {
+        "prefix": "quadraticCurveTo",
+        "body": [
+            "ctx.quadraticCurveTo(${1:cpx}, ${2:cpy}, ${3:x}, ${4:y});",
+            "${5}"
+        ],
+        "description": "ctx.quadraticCurveTo"
+    },
+    "rect": {
+        "prefix": "rect",
+        "body": [
+            "ctx.rect(${1:x}, ${2:y}, ${3:width}, ${4:height});",
+            "${5}"
+        ],
+        "description": "ctx.rect"
+    },
+    "resetTransform": {
+        "prefix": "resetTransform",
+        "body": [
+            "ctx.resetTransform();",
+            "${1}"
+        ],
+        "description": "ctx.resetTransform  \nYou can also use the CanvasRenderingContext2D.setTransform() method to reset the current transform to the identity matrix, like so:\ncontext.setTransform(1, 0, 0, 1, 0, 0);"
+    },
+    "restore": {
+        "prefix": "restore",
+        "body": [
+            "ctx.restore();",
+            "${1}"
+        ],
+        "description": "ctx.restore"
+    },
+    "rotate": {
+        "prefix": "rotate",
+        "body": [
+            "ctx.rotate(${1:Math.PI / 180 * }${2:degree});",
+            "${3}"
+        ],
+        "description": "ctx.rotate"
+    },
+    "save": {
+        "prefix": "save",
+        "body": [
+            "ctx.save();",
+            "${1}"
+        ],
+        "description": "ctx.save"
+    },
+    "scale": {
+        "prefix": "scale",
+        "body": [
+            "ctx.scale(${1:x}, ${2:y});",
+            "${3}"
+        ],
+        "description": "ctx.scale"
+    },
+    "setLineDash": {
+        "prefix": "setLineDash",
+        "body": [
+            "ctx.setLineDash([${1:Array}]);",
+            "${2}"
+        ],
+        "description": "ctx.setLineDash"
+    },
+    "setTransform": {
+        "prefix": "setTransform",
+        "body": [
+            "ctx.setTransform(${1:a}, ${2:b}, ${3:c}, ${4:d}, ${5:e}, ${6:f});",
+            "${7}"
+        ],
+        "description": "ctx.setTransform \n a: Horizontal scaling. \n b: Horizontal skewing. \n c: Vertical skewing. \n d: Vertical scaling. \n e: Horizontal moving. \n f: Vertical moving."
+    },
+    "shadowBlur": {
+        "prefix": "shadowBlur",
+        "body": [
+            "ctx.shadowBlur=${1:blur};",
+            "${2}"
+        ],
+        "description": "ctx.shadowBlur"
+    },
+    "shadowColor": {
+        "prefix": "shadowColor",
+        "body": [
+            "ctx.shadowColor='${1:color}';",
+            "${2}"
+        ],
+        "description": "ctx.shadowColor"
+    },
+    "shadowOffsetX": {
+        "prefix": "shadowOffsetX",
+        "body": [
+            "ctx.shadowOffsetX=${1:x};",
+            "${2}"
+        ],
+        "description": "ctx.shadowOffsetX"
+    },
+    "shadowOffsetY": {
+        "prefix": "shadowOffsetY",
+        "body": [
+            "ctx.shadowOffsetY=${1:y};",
+            "${2}"
+        ],
+        "description": "ctx.shadowOffsetY"
+    },
+    "stroke": {
+        "prefix": "stroke",
+        "body": [
+            "ctx.stroke();",
+            "${1}"
+        ],
+        "description": "ctx.stroke"
+    },
+    "strokeRect": {
+        "prefix": "strokeRect",
+        "body": [
+            "ctx.strokeRect(${1:x}, ${2:y}, ${3:width}, ${4:height});",
+            "${5}"
+        ],
+        "description": "ctx.strokeRect"
+    },
+    "strokeStyle": {
+        "prefix": "strokeStyle",
+        "body": [
+            "ctx.strokeStyle='${1:color}';",
+            "${2}"
+        ],
+        "description": "ctx.strokeStyle"
+    },
+    "strokeText": {
+        "prefix": "strokeText",
+        "body": [
+            "ctx.strokeText(${1:text}, ${2:x}, ${3:y}${4:, maxWidth});",
+            "${5}"
+        ],
+        "description": "ctx.strokeText"
+    },
+    "textAlign": {
+        "prefix": "textAlign",
+        "body": [
+            "ctx.textAlign='${1:start | left | center | right |end}';",
+            "${2}"
+        ],
+        "description": "ctx.textAlign"
+    },
+    "textBaseline": {
+        "prefix": "textBaseline",
+        "body": [
+            "ctx.textBaseline='${1:top | hanging | middle | alphabetic | ideographic | bottom}';",
+            "${2}"
+        ],
+        "description": "ctx.textBaseline"
+    },
+    "toDataURL": {
+        "prefix": "toDataURL",
+        "body": [
+            "${1}.toDataURL(${2});",
+            "${3}"
+        ],
+        "description": "toDataURL()"
+    },
+    "transform": {
+        "prefix": "transform",
+        "body": [
+            "ctx.transform(${1:a}, ${2:b}, ${3:c}, ${4:d}, ${5:e}, ${6:f});",
+            "${7}"
+        ],
+        "description": "ctx.transform"
+    },
+    "translate": {
+        "prefix": "translate",
+        "body": [
+            "ctx.translate(${1:x}, ${2:y});",
+            "${3}"
+        ],
+        "description": "ctx.translate"
+    }
+}
