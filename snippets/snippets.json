@@ -151,7 +151,7 @@
     "fillText": {
         "prefix": "fillText",
         "body": [
-            "context.fillText(${1:text}, ${2:x}, ${3:y}${[4:, maxWidth});",
+            "context.fillText(${1:text}, ${2:x}, ${3:y}${4:, maxWidth});",
             "${5}"
         ],
         "description": "context.fillText"
@@ -201,7 +201,6 @@
         "body": [
             "context.globalCompositeOperation='${1:source-over | copy | destination-in | destination-out | destination-over | lighter | source-atop | source-in | source-out | xor}';",
             "${2}"
-
         ],
         "description": "context.globalCompositeOperation"
     },
